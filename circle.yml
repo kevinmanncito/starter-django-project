@@ -1,0 +1,4 @@
+machine:
+
+  environment:
+    DJANGO_SETTINGS_MODULE: testcircle.settings
