@@ -6,6 +6,6 @@ machine:
 
 dependencies:
   override:
-    - pwd
+    - ls -lah
     - source ./bin/activate
 
