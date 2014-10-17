@@ -1,4 +1,7 @@
 machine:
 
+  dependencies:
+    - source ./bin/activate
+
   environment:
     DJANGO_SETTINGS_MODULE: testcircle.settings
