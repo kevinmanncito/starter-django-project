@@ -6,6 +6,6 @@ machine:
 
 dependencies:
   override:
-    - ls -lah
-    - source ./bin/activate
+    - ls -lah ../
+    - source ../bin/activate
 
