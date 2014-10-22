@@ -1,11 +1,6 @@
-machine:
-
-  environment:
-    DJANGO_SETTINGS_MODULE: testcircle.settings
-
-
-dependencies:
+---
+test:
   override:
-    - ls -lah ../bin
-    - source ../virtualenvs/bin/activate
-
+    - coverage run manage.py test
+  post:
+    - coverage html -d $CIRCLE_ARTIFACTS
