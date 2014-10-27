@@ -49,8 +49,8 @@ dependencies:
 database:
   override:
     # replace CircleCI's generated database.yml
-    - cp settings/database.yml.ci config/database.yml
-    - psql -U ubuntu circle_test < my-database-setup.sql
+    - cp config/database.yml.ci config/database.yml
+    # - psql -U ubuntu circle_test < my-database-setup.sql
     # - bundle exec rake db:create db:schema:load
 
 ## Customize test commands
