@@ -14,14 +14,6 @@ dependencies:
   pre:
     - pip install -r misc/requirements.txt
 
-## Customize database setup
-# database:
-  # override:
-    # replace CircleCI's generated database.yml
-    # - cp config/database.yml.ci config/database.yml
-    # - psql -U ubuntu circle_test < my-database-setup.sql
-    # - bundle exec rake db:create db:schema:load
-
 test:
   override:
     - coverage run manage.py test
