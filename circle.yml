@@ -1,6 +1,4 @@
-## Customize the test machine
 machine:
-
   timezone:
     America/Denver
 
@@ -9,19 +7,9 @@ machine:
     version:
       2.7.5
 
-  # Override /etc/hosts
-  # hosts:
-  #   circlehost: 127.0.0.1
-  #   dev.mycompany.com: 127.0.0.1
-
-  # Add some environment variables
   environment:
     LK_ENV: test
-    DATABASE_URL: postgres://ubuntu:@127.0.0.1:5432/circle_test
-    POSTGRES_ADDR: 127.0.0.1
-    POSTGRES_PORT: 5432
 
-## Customize dependencies
 dependencies:
   pre:
     - pip install -r misc/requirements.txt
@@ -47,15 +35,15 @@ test:
 #     heroku:
 #       appname: foo-bar-123
 
-deployment:
-  production:
-    branch: master
-    commands:
-      - ./deploy-to-production.sh
-  staging:
-    branch: staging
-    commands:
-      - ./deploy-to-staging.sh
+# deployment:
+#   production:
+#     branch: master
+#     commands:
+#       - ./deploy-to-production.sh
+#   staging:
+#     branch: staging
+#     commands:
+#       - ./deploy-to-staging.sh
 
 ## Custom notifications
 # notify:

@@ -1,5 +1,3 @@
-import os
-
 from settings.common import *
 
 DATABASES = {
@@ -8,9 +6,7 @@ DATABASES = {
         'NAME': 'circleci_test',
         'USER': 'ubuntu',
         'PASSWORD': '',
-        'HOST': os.environ["POSTGRES_ADDR"],
-        'PORT': os.environ["POSTGRES_PORT"],
+        'HOST': '127.0.0.1',
+        'PORT': 5432,
     }
 }
-
-DATABASES['default']['NAME'] = '{0}'.format(DATABASES['default']['NAME'])
