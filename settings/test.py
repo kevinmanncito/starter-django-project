@@ -5,8 +5,8 @@ from settings.common import *
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ubuntu',
-        'USER': 'postgres',
+        'NAME': 'circleci_test',
+        'USER': 'cade',
         'PASSWORD': '',
         'HOST': os.environ["POSTGRES_ADDR"],
         'PORT': os.environ["POSTGRES_PORT"],
