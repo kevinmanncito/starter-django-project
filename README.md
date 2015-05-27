@@ -7,7 +7,7 @@ Good starting point for a modern Django web application. Comes with support for 
 * Once those packages are installed on your Mac open Kitematic. (This will install Docker and Virtual Box and start the Docker VM. This first time it will take a while longer and ask for your password)
 * Kitematic will show you some recommended containers to build from [docker hub](https://hub.docker.com/account/signup/). Click create hello-world-nginx example in the top left. Once this builds this will create a folder in your home directory: ```~/Kitematic```
 * Feel free to try out the nginx server and see how docker and Kitematic work and when your ready to move on...
-* ```cd``` into the Kitematic folder and clone the django-scaffold by running ```git clone https://github.com/kevinmanncito/django-scaffold```
+* ```cd``` into the Kitematic folder and clone the django-scaffold by running ```git clone https://github.com/lightningkite/django-scaffold```
 
 **Basic development workflow**:
 
